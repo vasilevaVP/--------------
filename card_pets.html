@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./img/home.ico">
+    
+    <title>Карточка питомца</title>
+</head>
+
+<body>
+    <header>
+        <a href="./index.html"><img src="./img/logo.svg" alt=""></a>
+        <ul>
+           <a href="./index.html"> <li>Главная</li></a>
+           <a href="./index.html#page2"><li>О нас</li></a>
+            <a href="./pets.html"><li>Питомцы</li></a>
+            <a href="./index.html#page4"><li>Приютить</li></a>
+            <a href="./card_pets.html#don"><li>Пожертвования</li></a>
+        </ul>
+    </header>
+    <section id="druz">
+        <div class="foto">
+            <div class="card_druz">
+                <img src="./img/druz.png" alt="">
+                <div class="info_druz">
+                    <div class="text_infodruz">
+                        <h2>Дружок</h2>
+                        <p>1 год 7 месяцев</p>
+                    </div>
+                    <div class="vid">
+                        <p><b>Вид:</b> Собака</p>
+                        <p><b>Парода:</b> Русская гончая</p>
+                        <p><b>Пол:</b> М</p>
+                    </div>
+                </div>
+            </div>
+
+            <a id="openModal"><button>Подать завку</button></a>
+        </div>
+        <div class="card_text">
+            <h3>Описание</h3>
+            <p>Дружок - это очаровательный пес породы русская гончая, который ищет любящую семью. Он обладает всеми
+                характерными чертами своей породы: преданность, ум, игривость и неутомимый оптимизм.
+                Дружок будет счастлив стать частью вашей семьи.</p>
+            <h3>Документы</h3>
+            <p> <b>Вакцинация:</b> <br> Дата последней вакцинации: 20.03.2023 <br> Вакцины: Нобивак DHPPI, Нобивак
+                Lepto<br>Ветеринарная клиника: "Зоовет"</p>
+            <p><b>Происхождение:</b><br>Найден на улице<br>Дата поступления в приют: 15.01.2023</p>
+            <p><b>Во время перевозки питомец нуждается в: </b><br>Просторной переноске для собак, свежей воде, сухом
+                корме</p>
+            <h3>Волонтер</h3>
+            <p><b>Валентина Емельянова</b>
+                <br>Можно связаться по номеру: +7 985 741 32 65
+            </p>
+        </div>
+    </section>
+    <section id="don">
+
+        <h2>Хотите помочь финансово этому питомцу?</h2>
+        <div class="frm">
+            <div class="inputdon">
+                <input type="text" placeholder="Имя отправителя">
+                <input type="text" placeholder="Фамилия отправителя">
+                <input type="text" placeholder="Сумма пожертвования">
+            </div>
+            <button>Пожертвовать</button>
+        </div>
+    </section>
+    <div id="authModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeAuth">&times;</span>
+
+            <div class="inp">
+                <h2>Заявка на усыновление</h2>
+                <input type="text" placeholder="Имя">
+                <input type="text" placeholder="Фамилия">
+                <input type="tel" id="phone" name="phone" placeholder="Номер">
+                <input type="email" placeholder="Почта">
+                <button id="continueBtn">Отправить</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно подтверждения -->
+    <div id="confirmModal" class="modal">
+        <div class="modal-content1">
+            <span id="closeConfirm"></span>
+            <div class="inpu">
+                <h2>Спасибо, что оставили заявку!</h2>
+                <p>Мы перезвоним Вам в течении 15 минут и вышлем всю информацию на электронную почту</p>
+                <button id="okBtn">Ок</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="blockfooter">
+            <img src="./img/logo.svg" alt="">
+            <ul>
+                <li><b>НАВИГАЦИЯ</b></li>
+                <li>Главная</li>
+                <li>О нас</li>
+                <li>Питомцы</li>
+                <li>Пожертвования</li>
+            </ul>
+            <ul>
+                <li><b>РЕКВИЗИТЫ</b></li>
+                <li>АНО «Центр реабилитации и приют для животных «Тёплый Дом»</li>
+                <li>ИНН 5609187812</li>
+                <li>КПП 560901001</li>
+            </ul>
+            <ul>
+                <li>Номер: +7 888 303 33 32</li>
+                <li>Почта: teply_dom@mail.ru</li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        const authModal = document.getElementById("authModal");
+        const confirmModal = document.getElementById("confirmModal");
+        const openModal = document.getElementById("openModal");
+        const closeAuth = document.getElementById("closeAuth");
+        const closeConfirm = document.getElementById("closeConfirm");
+        const continueBtn = document.getElementById("continueBtn");
+        const okBtn = document.getElementById("okBtn");
+
+        // Открытие модального окна авторизации
+        openModal.onclick = function () {
+            authModal.style.display = "block";
+        }
+
+        // Закрытие модального окна авторизации
+        closeAuth.onclick = function () {
+            authModal.style.display = "none";
+        }
+
+        // Закрытие модального окна подтверждения
+        closeConfirm.onclick = function () {
+            confirmModal.style.display = "none";
+        }
+
+        // Обработка нажатия на кнопку "Отправить"
+        continueBtn.onclick = function () {
+            authModal.style.display = "none"; // Закрываем окно авторизации
+            confirmModal.style.display = "block"; // Открываем окно подтверждения
+        }
+
+        // Обработка нажатия на кнопку "ОК"
+        okBtn.onclick = function () {
+            confirmModal.style.display = "none"; // Закрываем окно подтверждения
+        }
+
+        // Закрытие модальных окон при клике вне их области
+        window.onclick = function (event) {
+            if (event.target === authModal) {
+                authModal.style.display = "none";
+            }
+            if (event.target === confirmModal) {
+                confirmModal.style.display = "none";
+            }
+        }
+
+    </script>
+</body>

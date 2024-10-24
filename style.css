@@ -1,0 +1,490 @@
+/*Шапка*/
+header {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1214px;
+    justify-content: space-between;
+    margin-top: 36px;
+}
+
+header ul {
+    display: flex;
+    margin: 0 auto;
+    max-width: 701px;
+    justify-content: space-between;
+    gap: 41px;
+ 
+}
+
+header li {
+    list-style-type: none;
+    font-size: 18px;
+    font-family: Montserrat;
+    font-weight: 500;
+
+}
+header a{
+    text-decoration: none;
+    color: #000000;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/*Подвал*/
+footer {
+    justify-content: space-between;
+    margin-top: 36px;
+    align-items: start;
+    background-color: #E5EEFF;
+
+}
+
+.blockfooter {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1214px;
+    justify-content: space-between;
+    margin-top: 100px;
+    align-items: start;
+    padding: 43px 0 60px 0;
+}
+
+footer li {
+    list-style-type: none;
+    font-size: 18px;
+    font-family: Montserrat;
+    font-weight: 500;
+    margin-bottom: 20px;
+
+}
+
+footer ul {
+    width: 250px;
+    margin: 0;
+
+}
+
+/*Главная страница*/
+#page1 {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1214px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+
+}
+
+#page2,
+#page3 {
+    display: block;
+    margin-top: 60px;
+    margin: 0 auto;
+    max-width: 1214px;
+    margin-bottom: 60px;
+}
+
+
+h1 {
+    font-size: 40px;
+    font-family: Montserrat;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 32px;
+    font-family: Montserrat;
+    font-weight: 600;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+
+p {
+    font-size: 18px;
+    font-family: Montserrat;
+    font-weight: 400;
+    margin: 0;
+}
+
+button {
+    padding: 15px 25px 15px 25px;
+    font-size: 18px;
+    font-family: Montserrat;
+    font-weight: 500;
+    margin: 0;
+    border-radius: 60px;
+    border: 0;
+    cursor: pointer;
+}
+
+.text {
+    width: 458px;
+    margin-bottom: 40px;
+}
+.button{
+    display: flex;
+}
+.priutit button {
+    background-color: black;
+    color: white;
+    margin-right: 20px;
+}
+
+.priutit button:hover{
+    background-color:#222529;
+}
+.donation button{
+    background-color: #FDD337;
+}
+.donation button:hover {
+    background-color: #ffb20d;
+}
+
+.block1,
+.cards {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1214px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about {
+    display: block;
+    width: 520px;
+}
+
+.about p {
+    margin-bottom: 20px;
+}
+
+.card_vol {
+    width: 250px;
+    height: 240px;
+    background-color: #E5EEFF;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.fio p {
+    width: 154px;
+}
+
+.fio {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.number {
+    margin: 30px 0 34px 0;
+    text-align: center;
+}
+
+.pod {
+    font-weight: 500;
+    width: 242px;
+}
+
+#page4 {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 60px;
+}
+
+#page5 {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1214px;
+    justify-content: space-around;
+}
+
+.box1_p5 p {
+    width: 463px;
+    margin-bottom: 44px;
+}
+
+.box2_p5 input,
+select,
+textarea {
+    display: block;
+    width: 386px;
+    height: 52px;
+    background-color: #ECECEC;
+    border-radius: 15px;
+    border: 0;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 400;
+    color: #000000;
+    padding-left: 15px;
+    margin-bottom: 25px;
+}
+
+.input2 {
+    display: flex;
+    max-width: 400px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.input2 input,
+select {
+    width: 176px;
+    height: 52px;
+}
+
+textarea {
+    padding-top: 15px;
+    height: 110px;
+}
+
+.box2_p5 button {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.box2_p5 button:hover{
+    background-color:#222529;
+}
+
+
+/*Страница "Питомцы"*/
+#catalog {
+    display: block;
+}
+
+#catalog h2 {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.cards_pet {
+    display: flex;
+    max-width: 1214px;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card_pets{
+cursor: pointer;
+}
+
+
+.card_pets p {
+    font-weight: 800;
+    margin-bottom: 50px;
+}
+
+/*Страница "Карточка питомца"*/
+#druz {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1214px;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.card_druz {
+    background-color: #E5EEFF;
+    border-radius: 20px;
+}
+
+.text_infodruz h2 {
+    margin-bottom: 0;
+}
+.text_infodruz p {
+    margin-bottom: 20px;
+}
+.text_infodruz{
+    padding: 0 20px 0 20px;
+}
+.vid p {
+    margin-bottom: 15px;
+}
+.vid {
+   padding: 0 20px 20px 20px;
+}
+
+.card_text{
+    width: 685px;
+}
+.card_text p{
+    width: 585px;
+    margin-bottom: 30px;
+}
+
+h3{
+    font-size: 28px;
+    font-family: Montserrat;
+    font-weight: 600;
+    margin: 0 0 30px 0;   
+}
+
+.foto button{
+background-color: black;
+color: white;
+margin-top: 45px;
+}
+.foto button:hover{
+        background-color:#222529;
+    }
+    
+
+#don{
+    margin: 0 auto;
+    max-width: 1214px;
+    margin-top: 150px;
+    text-align: center;
+}
+
+#don h2 {
+    text-align: center;
+    margin-top: 80px;
+}
+.inputdon input{
+    width: 300px;
+    height: 52px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    border: solid 1px #949494;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 400;
+    color: #000000;
+    padding-left: 15px;
+    margin-bottom: 25px; 
+    margin-right: 15px;
+}
+
+.frm button{
+    background-color: #FDD337;
+    color: black;
+    margin-top: 25px;
+    }
+    .frm button:hover{
+        background-color:#ffb20d;
+    }
+    /*Модальное окно*/
+
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .modal-content {
+        background-color: #ffffff;
+        margin: 2.5% auto;
+        padding: 10px;
+        border-radius: 20px;
+        width: 774px;
+        height: 722px;
+        text-align: center;
+    }
+
+    .close {
+        color: #040404;
+        float: right;
+        font-size: 50px;
+        margin-right: 10px;
+    }
+
+    .modal-content1 {
+        background-color: #ffffff;
+        margin: 10% auto;
+        padding: 10px;
+        border-radius: 20px;
+        width: 676px;
+        height: 410px;
+        text-align: center;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: rgb(161, 159, 159);
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .inputs {
+        display: flex;
+    }
+
+    .inp {
+        width: 475px;
+        margin: 0 auto;
+
+    }
+
+    .inp h2 {
+        margin-top: 130px;
+        font: 700 32px Montserrat;
+        margin-bottom: 70px;
+    }
+
+    .inp input {
+        width: 375px;
+        height: 40px;
+        margin-bottom: 30px;
+        border-radius: 15px;
+        border: solid 1px #9CA3AF;
+        padding-left: 16px;
+        font: 400 16px Montserrat;
+    }
+
+    .inp button {
+        width: 162px;
+        height: 52px;
+        background-color: black;
+        border: none;
+        border-radius: 50px;
+        font: 500 18px Montserrat;
+        color: white;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+    .inp button:hover {
+        background-color: #222529;
+    }
+
+    .inpu h2 {
+        margin: 110px 0 20px 0;
+        font: 700 28px Montserrat;
+    }
+
+    .inpu p {
+        width: 450px;
+        font: 400 16px Montserrat;
+        margin: 0 auto;
+        color: #6e737b;
+    }
+
+    .inpu button {
+        width: 87px;
+        height: 52px;
+        margin-top: 50px;
+        border-radius: 50px;
+        border: 0;
+        font: 600 18px Montserrat;
+        background-color: #FDD337;
+        color: black;
+        cursor: pointer;
+    }
+
+    .inpu button:hover {
+        background-color: #ffb20d;
+    }
